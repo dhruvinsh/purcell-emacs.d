@@ -2,6 +2,9 @@
 ;;; Comentary:
 ;;; Code:
 
+;;; remember last cursor place in a file
+(save-place-mode 1)
+
 ;;; Some better fonts
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
 (set-face-attribute 'fixed-pitch nil :font "Fira Code")
