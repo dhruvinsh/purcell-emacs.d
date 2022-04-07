@@ -10,7 +10,9 @@
 (global-unset-key [(control x) (control z)])
 
 ;;; Some better fonts
-(set-face-attribute 'default nil :font "Fira Code" :height 120)
+(if (< emacs-major-version 29)
+    (set-face-attribute 'default nil :font "Fira Code" :height 120)
+  (set-face-attribute 'default nil :font "Fira Code" :height 70))
 (set-face-attribute 'fixed-pitch nil :font "Fira Code")
 (set-face-attribute 'variable-pitch nil :font "Hack")
 
