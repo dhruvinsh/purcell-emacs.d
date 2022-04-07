@@ -11,8 +11,8 @@
 (set-face-attribute 'variable-pitch nil :font "Hack")
 
 ;;; Some nice themes
-(require-package 'zenburn-theme)
-(load-theme 'zenburn t)
+;;; (require-package 'zenburn-theme)
+(load-theme 'modus-vivendi)
 
 ;;; most of my system right now are windows wsl system
 ;;; windows 11 with native weston display or windows 10
