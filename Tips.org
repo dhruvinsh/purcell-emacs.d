@@ -1,0 +1,18 @@
+* Description
+This file contain some cool tips to make workflow faster with given emacs
+configuration. Also it has some cool keybiding (cheatsheet) to help me work
+better.
+
+** Files
+- Open recent files: *recentf-open-files*
+
+** Minibuffer
+- We have savehist-mode enable so M-n and M-p can help to look for previous
+  commands
+
+** Editing
+
+** Movement
+- Jump to linenumber: *M-g g*
+- Search: forward search *C-s* & reverse search *C-r*
+- Paragrah jumps: *M-{* & *M-}*
