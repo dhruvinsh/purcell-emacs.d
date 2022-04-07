@@ -5,6 +5,10 @@
 ;;; remember last cursor place in a file
 (save-place-mode 1)
 
+;;; disabling some annoying keybindings
+(global-unset-key [(control z)])
+(global-unset-key [(control x) (control z)])
+
 ;;; Some better fonts
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
 (set-face-attribute 'fixed-pitch nil :font "Fira Code")
