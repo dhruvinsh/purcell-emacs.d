@@ -31,6 +31,12 @@
             browse-url-browser-function 'browse-url-generic
             search-web-default-browser 'browse-url-generic))))
 
+;;; Autoformat python with black
+;;; black-on-save-mode is available via reformatter package in init-python.el
+(eval-after-load 'python-mode
+  (when (executable-find "black")
+    (add-hook 'python-mode-hook 'black-on-save-mode)))
+
 (provide 'init-local)
 
 ;;; init-local.el ends here
