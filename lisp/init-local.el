@@ -37,6 +37,11 @@
             browse-url-browser-function 'browse-url-generic
             search-web-default-browser 'browse-url-generic))))
 
+;;; Python development
+(require-package 'py-isort)
+(eval-after-load 'python-mode
+  (when (executable-find "isort")
+    (add-hook 'before-save-hook 'py-isort-before-save)))
 ;;; Autoformat python with black
 ;;; black-on-save-mode is available via reformatter package in init-python.el
 (eval-after-load 'python-mode
