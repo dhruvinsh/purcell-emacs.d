@@ -17,6 +17,7 @@
 
 ;;; Some nice themes
 ;;; (require-package 'zenburn-theme)
+(disable-theme 'sanityinc-tomorrow-bright)
 (load-theme 'modus-vivendi)
 
 ;;; most of my system right now are windows wsl system
