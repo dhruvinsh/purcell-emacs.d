@@ -5,9 +5,10 @@
 ;;; remember last cursor place in a file
 (save-place-mode 1)
 
-;;; disabling some annoying keybindings
-(global-unset-key (kbd "C-z"))
-(global-unset-key (kbd "C-x C-z"))
+;;; disabling some annoying keybindings in graphical mode
+(when (display-graphic-p) (lambda ()
+                            (global-unset-key (kbd "C-z"))
+                            (global-unset-key (kbd "C-x C-z"))))
 
 ;;; Some better fonts
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
