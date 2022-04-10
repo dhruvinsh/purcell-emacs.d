@@ -6,8 +6,8 @@
 (save-place-mode 1)
 
 ;;; disabling some annoying keybindings
-(global-unset-key [(control z)])
-(global-unset-key [(control x) (control z)])
+(global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-x C-z"))
 
 ;;; Some better fonts
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
